@@ -1,0 +1,562 @@
+Aero-SecureNet : Transformer-Powered
+Detection of Data Injection Attacks in
+5G-Enabled Aerospace IoT Networks
+Harshil L. Jetani∗, Pujan J. Mevawala†, Aparna Kumari‡, Sudeep Tanwar§
+∗†§Department of Computer Science and Engineering, Institute of Technology, Nirma University, Gujarat, India,
+‡Computer Science and Engineering(AI-ML)
+Email:∗23bce515@nirmauni.ac.in,†23bce531@nirmauni.ac.in,‡aparna.kumari@nirmauni.ac.in.
+§sudeep.tanwar@nirmauni.ac.in
+Abstract —Aerospace communication systems through
+which critical information is shared between the aircraft
+and control centers have been perceived as guaranteeing
+the safe and efficient performance of the flights. In fact,
+security of aerospace communication systems remains
+exposed to cyber threats, including SQL injection attacks,
+that may compromise the integrity of the data and, in the
+worst scenario, affect the communication of aircraft. This
+paper illustrates a deep learning-based framework that
+detects whether aerospace communication is attacked or
+under normal condition and then classifies. The currently
+applied deep learning models are RNN, LSTM and
+Transformers. Optimization was carried out using the
+following optimizers, Adam, AdamW and Nadam. This
+method has been adopted in the analysis of network traf-
+fic based on SQL injection attacks. Among the models,
+it was noticed that the Transformer performed better
+in the aspect of capturing contextual dependencies and
+processing sequential information. The proposed system
+detects communication vulnerabilities in preventing the
+spread of erroneous data between stations and aircraft. It
+demonstrates accuracy of 98.99% as well as ROC curve
+analysis, the Transformer model is superior to RNN and
+LSTM models.
+Index Terms —SQL injection attack, IoT to basestation,
+Flight data controller, Deep Learning, Artificial Intelli-
+gence
+I. I NTRODUCTION
+The Flight communication and data recording sys-
+tems have become very important day by day in
+the aerospace industry which has revolutionized in-
+novations in the flight. Prior, decision making was
+purely manual. But in crucial situations as emergency,
+abortion, compulsion this is not more useful. In such
+important areas such as disasters response and military
+combat they have a very crucial role in ensuring of
+secure movement, efficient emergency response and
+heightened communication by relaying crucial flight
+information to the appropriate quarters. All these sys-
+tems are availing timely information and are helping to
+enable better operational result by reducing possibility
+of occurrence of accidents.
+In the area of communication technology, the pro-
+ductivity in aerospace is gotten through new and bettersolutions. Currently, new technologies such as the IoT
+and AI are being used to address the needs to track and
+manage resources in aviation systems in real time. New
+aircraft systems utilize intelligent algorithms for traffic
+analysis, latency expectations for decision making.
+However, there are problems like bandwidth alloca-
+tion and control which affect some important supplies
+like communication, GPS equipment, industrial flight
+instruments and other essential items.
+The communication and flight data recorders are
+essential equipment of an aircraft including other sys-
+tems that are vital sources of information that would
+be required in analysis, mobilization of resources as
+well as timely decision making. Such systems include
+equipment available for collecting high-fidelity data
+streams in fixed intervals for operative functionality
+within multiple environments. For example, SQL in-
+jection remains one of the biggest threats to flight
+operations safety. This type of cyber threat happens
+when an attacker introduces wrong data inputs to the
+queries of the database enabling them to adjust or even
+steal confidential information.
+By releasing the potential of aerospace industry
+and the need for securing it from attacks like SQL
+injection. A well known researcher Maha et al. have
+tried the various ML techniques like ANN, CNN,
+decision tree, naive Bayes, SVM, random forest and
+logistic regression, the experimental results showed
+that the proposed approach achieved an accuracy of
+94% and an F1-score of 92% [1]. Moreover to detect
+and preventing from the attack ketema et al. had used
+the CNN model and able to get the accuracy around
+the 97%[2]. Falor et al. applied Bayes Net followed
+by Kibana who achieved 95.4% accuracy for detection
+of SQL injection[3].
+A well known researcher John Irungu et al. had
+used three main classifiers indicate a model predic-
+tion accuracy of 98.3605% with SVM, 96.296% with
+KNN and 97.530% with Random Forest [4]. With the
+aim of detection of SQL injection attack a researcher
+senouci et al. carried out experiments which shown
+considerable increase in accuracy, 96.65% with the
+GRU [5]. A well known researcher Wei Zhang et al.
+using deep neural network achieved 96% accuracy [6].
+Mohd Fadzli Marhusin et al. applied various machine
+learning models and achieved 97.3% accuracy with
+SVM outperforming other models[7] . Kwok Tai Chui
+et al. achieved an outstanding accuracy of 99.6% by
+employing a Stacked Random Forest model combined
+with a Boosted Logistic Regression Meta-Learner,
+demonstrating a remarkable performance[8].
+A. Novelty
+A devoted research work has come up with a
+revolutionary framing of Aero-SecureNet , powered by
+DL models and cybersecurity considerations to secure
+aerospace communication systems from SQL injection
+attacks with Transformers, RNN, LSTM. The opti-
+mization is achieved by employing Adam, AdamW
+and Nadam optimizers which indeed improved the
+accuracy of the model and caused decline in false
+positives. For the success of this framework, a series
+of evaluation metrics including but not limited to
+accuracy, but also precision, recall and F1-score are
+used. This research brings about a change in aerospace
+cybersecurity since it combines data security along
+with real-time communication conditions to keep it
+safe and operating without break.
+B. Research Contributions
+•We proposed Aero-SecureNet , a DL-based frame-
+work utilizing Transformers to detect the SQL in-
+jection attack which ensures reliable communica-
+tion in life critical applications such as aerospace.
+•A comparative analysis of DL models (RNN,
+LSTM, Transformers) and optimizers (Adam,
+AdamW and Nadam) was conducted which
+demonstrated the best performance of the Trans-
+formers in attack detection.
+•Aero-SecureNet is validated using various eval-
+uation metrics such as accuracy, loss, precision,
+recall, F1-score and ROC curves.
+C. Article Layout
+The rest of the paper is organized as follows. The
+system model and problem formulation is elucidated
+in section II. Aero-SecureNet architecture is shown
+in section III. Results are shown in section IV. The
+section V presents the conclusion and future work.
+II. S YSTEM MODEL AND PROBLEM FORMULATION
+This proposed solution addresses the vulnerability of
+SQL injection attacks in today’s flight communication
+and IoT systems. The aerospace critical defense, the
+protection of flight data recorder and communication
+system based on IoT communication is the threat of
+such attacks which may lead to unauthorized access
+or system failure. We classify network communication
+Fig. 1: Aero-SecureNet Architecture.
+into secure data channels and utilize deep learning
+based classification models for optimization of intru-
+sion detection that helps in detecting the malicious
+SQL injection attack.
+minimize
+w,θL(w, θ) +λ· R(w)
+subject to: P(C(q) =Attack |xq)≥δ,∀q∈QAttack
+P(C(q) =Normal |xq)≥1−ϵ,∀q∈QNormal
+where, the optimization problem minimizes the loss
+function L(w, θ)with regularization R(w)to balance
+model complexity and accuracy, while ensuring attack
+classification confidence δand tolerating a misclassifi-
+cation rate ϵfor normal queries. The objectives include
+minimizing detection error J1and maximizing model
+confidence J2,
+The model we implemented allows us to take advan-
+tage of deep learning techniques to accurately analyze
+network interactions and predict the potential SQL
+injection attack. It categorizes each query based on
+input features.
+III. T HEPROPOSED APPROACH
+Aero-SecureNet (as shown in Fig. 1) consists of
+three subsections: the data acquisition layer, the SQL
+injection attack detection layer and the response and
+adaptive migration layer. Each layer is described as
+follows.
+A. Data Acquisition Layer
+The Data Acquisition Layer in aerospace IoT sys-
+tems plays crucial role in the transmitting and col-
+lecting data from IoT devices such as environmental
+sensors, flight data recorders and communication ser-
+vices onboard the aircraft sensors which will be useful
+for collecting data and then detecting the SQL injec-
+tion attack, including environmental conditions, service
+port status and communication traffic. All the data is
+collected by the base station which is responsible for
+receiving and processing the data, performing feature
+extraction, scaling and transmitting the processed data
+for further analysis. Equation describes the flow of
+data between the station and IoT device, where the
+Algorithm 1 Transformer-based Anomaly Detection in
+IoT Dataset
+Require: Dataset D, features F, target T, model
+parameters P, callbacks C
+Ensure: Trained model, evaluation metrics and visu-
+alizations
+1:Start: Initialize the process by setting up the
+environment and loading necessary libraries
+2:Load dataset D, extract features X←D[F], target
+y←D[T]
+3:Encode target yusing LabelEncoder
+4:Split dataset: Xtrain,Xtest,ytrain,ytest ←
+train test split(X,y)
+5:Normalize features with StandardScaler
+6:Build Transformer model: Add encoder blocks
+with multihead attention and output layer
+7:Compile model with optimizer ( Adam ,Nadam , or
+AdamW )
+8:Train model using callbacks: EarlyStopping
+andReduceLROnPlateau
+9:Mitigate potential attacks:
+•Validate incoming queries for anomalies.
+•Dynamically adjust the frequency of commu-
+nication between devices.
+10:Evaluate model: Generate metrics (accuracy, pre-
+cision, recall, F1 score) and visualize (Precision-
+Recall curve, confusion matrix)
+11:End: Save the trained model, evaluation metrics
+and visualizations for further analysis
+base station acts as the central entity that receives and
+processes data from multiple sensors:
+Dacq(t) =Ttransmit (Xfiltered(t),Tdynamics (dsensors,dbase))
+Aero-SecureNet helps to detect SQL injection attacks
+by monitoring and analysing the traffic between the
+communication channel like IoT sensors and the base
+station. After analysing the coherence of data packets
+and communication protocols like ports, https, fre-
+quency, checksum Aero-SecureNet ensures that the data
+transmission remains secure and free from attacks like
+SQL injection. The data transmission process between
+the IoT sensors and the base station can be described
+as follows:
+Dsensor(t) =X
+si∈STtransmit (Xfiltered(t, si))
+Dbase(t) =X
+bj∈BTreceive (Dsensor(t),Ssync)· Csecure
+DSTB(t) =Tcombine
+X
+si∈SXfiltered(t, si),X
+bj∈BDbase(t)
+
+The equation represents the transmission process where
+the filtered sensor data STB Xfiltered(t, si)is aggregated
+intoDsensor(t)and transmitted to the base station. The
+base station synchronizes and secures the data before
+aggregating it for final analysis. The primary goal ofAero-SecureNet is to detect and categorize communica-
+tion into attack and normal scenario. The DL model is
+used to determine whether a communication is normal
+or contains attack. The attack detection mechanism is
+formulated as follows:
+ˆYattack(t) =α0+nX
+k=1αk·L⊖k
+t+Tthreshold (Esync(t), λthreshold )
+Esync(t) =C(t)−R(t−ˆL(t))
+2
+Here, Tthreshold ensures the absence of false detec-
+tions, while λthreshold controls the sensitivity of attack
+detection. The synchronization error Esync(t)is calcu-
+lated to ensure that detection process remains accurate
+and reliable.
+In summary, this layer is responsible for real-time
+data collection transmitted between the IoT sensors
+onboard the aircraft and the base station. The data
+parameters include communication traffic, packet count
+and byte count, all of which are useful in detecting the
+SQL injection attacks in the system.
+B. SQL injection Detection Layer
+The dataset contains numerous features, from which
+important ones are extracted through feature engi-
+neering. These features help determine whether the
+communication link is under an SQL injection attack
+or not. There are two target labels: Normal and Attack.
+The dataset used for training and evaluation, consists
+of samples collected from the communication between
+IoT devices and the base station. Each scenario is
+symbolically represented as S = [Normal, Attack]
+Initially, we experimented with various deep learning
+models such as Transformers, RNN and LSTM using
+optimizers such as Adam, Adamw, Nadam. After pro-
+cessing through the first layer, the output is passed to
+a multi-head attention layer with four heads, each of
+size 64. In Transfomers, the input is processed after
+applying layer normalization.
+h(l)
+j=z(l)
+j−µ(l)
+√
+σ2(l)+ϵ·γ(l)+β(l),
+where µ(l)=1
+ddX
+j=1z(l)
+j, σ2(l)=1
+ddX
+j=1
+z(l)
+j−µ(l)2
+Xeng(t) =Feng(Xraw(t),Wfeat,bfeat)+Ttrans(Xscaled(t))
+By doing this training and normalization we detect
+the attack in communication.
+Yatk(t) =fdet(Xcomm(t), θdet)· Dtrans(Xcomm(t),db)
+Xfiltered(t) =Fsanitize (Xraw(t),Wfilter,bfilter)
+Xsecure(t) =ftransform (Xfiltered(t), θsecure)
+Among all the models described above, the Trans-
+former model emerged as the best choice for classify-
+ing attacks. The Transformer model enables processing
+of sequential and complex data, which is crucial for
+applications such as flight communication, where the
+accuracy is a necessity. These deep learning algo-
+rithms support features that dynamically detect attacks
+throughout edge-to-fog data transmission. Transform-
+ers enables learning not only from textual data but
+also captures temporal data patterns, such as abnormal
+changes in the data transmission over time.
+Ldetect=TX
+t=1 
+Lattack(Ypred(t),Ytrue(t)) +λ∥Wall(t)∥2
+RNNs are well-suited for recognizing changing pat-
+terns during attack detection. The LSTM layer has
+ability to remember long-term dependencies which
+addresses the vanishing gradient problem, while han-
+dling sequential data. However, Transformers provides
+the aggregation of performance with prevention of
+model overfitting. We employed regularization tech-
+niques such as dropout layers (rate - 0.5) and batch
+normalization was applied after each recurrent layer.
+The output layer used softmax activation function,
+which provides the probability distribution for two
+binary classes. Binary cross-entropy loss is used to
+evaluate models during training. The loss derivative
+for the scaled sigmoid is expressed as:
+∂sm(α·z)i
+∂zj= sm( α·z)i·(δij−sm(α·z)j)
+where, sm represents the softmax function and gra-
+dient of binary cross entropy loss is derived as follows:
+∂LBCE
+∂W=1
+NNX
+i=1(pi−yi)zi+ 2λW
+where zirepresents the input to the sigmoid func-
+tion, piis the predicted probability and yiis the true
+label. The term 2λWrepresents the regularization
+factor applied to the weights and biases.
+The output layer contains two neurons representing:
+Normal and Attack. For training the Transformers, the
+AdamW optimizer is selected because it is incorporated
+with weight decay, which prevents overfitting on the
+training data. Another approach to prevent overfitting
+is early stopping, which was discussed earlier. It au-
+tomatically adjusts the learning rate during training,
+boosting the quantitative results. The decision-making
+process is mathematically represented by the following
+equation: gt=∇Lt
+L(˜ϕt) =TX
+t=1C(ht, yt)
+ϕt+1=ϕt−α·ˆmt√ˆvt+ϵ+γ·ϕt
+ϕg,t+1=ϕg,t−α·ˆmg,tp
+ˆvg,t+ϵ+γ·ϕg,t
+The final layer is well-suited for applications such as
+SQL injection detection in aerospace IoT systems andbase stations, where objective is detection efficiency.
+The model accurately classifies the normal and SQL
+injection attacks. At the same time, the primary advan-
+tage of using the Transformers architecture lies in its
+ability to handle complex sequential and timestamped
+data.
+C. Response and Adaptive Mitigation Layer
+This layer ensures that response, corrective action
+and feedback loop to strengthen the system to address
+the SQL injection attacks. The primary objective is
+to guarantee that the detection result d∈Dleads to
+proper execution of automated countermeasure c∈C
+(for instance, query filtering, input validation, or SQL
+query blocking) and the latter has been subject to
+routing based on resource allocation r∈R. This
+integration ensures that tasks can be easily migrated
+during an attack and thereby, increasing the system’s
+efficiency. Additionally, the receipt of feedback fb∈
+FBenables learning-based model updates in this layer
+and improves deep learning models for SQL injection
+detection.
+R(t) =X
+d∈D(β· C(d) +γ· A(c) +δ· F(fb))
+This layer guarantees that communication is never
+interrupted in case of SQL injection attack. It prevents
+SQL Injection by blocking SQL queries, validating
+input or filtering queries. Resources are dynamically
+allocated by the system to adapt to attack conditions
+in order to provide uninterrupted data flow and system
+functionality.
+IV. R ESULT ANALYSIS
+This section demonstrates the Aero-SecureNet ’s per-
+formance analysis using various evaluation metrics
+parameters, such as accuracy, loss, precision, recall and
+F1 score.
+A. Experimental Setup and Tools
+The experimental setup uses a server with two T4
+GPUs, 12 GB of RAM and 108 GB of hard disk space
+and an x86-64 architecture. For faster data calcula-
+tions and encapsulation of numerical functions we use
+numpy with PyTorch framework. Additionally, various
+libraries like datasets-2.18.0, dill-0.3.8, gitdb-4.0.11,
+docker-py creds-0.4.0, GitPython-3.1.42, multiprocess-
+0.70.16 were utilized.
+B. Dataset Identification and Description
+In this study, we utilize two benchmark datasets:
+Data Injection Attack Dataset for Internet of Things[9].
+The dataset contains the 15500 rows and 31 columns,
+features like service ,http_user_agent ,
+http_request_body_len ,dst_ip_bytes ,
+conn_state and many others. We perform the EDA
+on dataset and selected the top 10 important features
+for implementation. The datasets are preprocessed
+(a)
+ (b)
+ (c)
+Fig. 2: (a) Comparison of Validation Accuracy with Adam, Nadam and AdamW Optimisers with 3D plot (b)
+Confusion matrix for Transfomers (c) ROC Curve comparision with RNN, LSTM, Transfomers
+carefully in order to be compatible with deep learning
+models. Preprocessing strategies such as handling
+missing values, scaling, categorical feature encoding,
+normalization and handling outliers, are systematically
+applied. This approach provides a reliable performance
+in detecting attacks in IoT communication.
+C. Accuracy Comparison
+The 3D graph for validation accuracy in Fig. 2(a)
+provides comprehensive comparison of model perfor-
+mance across various optimizers, showcasing the ef-
+fectiveness of LSTM, RNN and Transformers models.
+The AdamW optimizer gives highest accuracy with
+Transformers, reaching 98.99%, followed by Adam
+and Nadam optimizers, achieving accuracies of 98.86%
+and 96.72.86% respectively. This highlights the ro-
+bustness of the Transformers architecture when paired
+with optimizers like AdamW. The LSTM model fol-
+lowing Transformers , also demonstrates commendable
+performance, particularly with the AdamW optimizer,
+achieving an accuracy of 98.80%, followed by Adam,
+Nadam which result in accuracies of 98.63% and
+98.80% respectively.
+This indicates LSTM’s ability to perform well with
+slightly reduced performance compared to Transform-
+ers. In contrast, the RNN model exhibits comparatively
+lower performance, with its best validation accuracy
+of 98.67% achieved using the AdamW optimizer, fol-
+lowed by Nadam and Adam, which achieved accura-
+cies of 98.80% and 98.67% respectively. These results
+emphasize the superiority of the Transformer model in
+achieving higher predictive accuracy across optimizers,
+with AdamW and Adam proving to be particularly
+effective. LSTM offers competitive performance, espe-
+cially with AdamW and RNN model is less consistent,
+highlighting its limitations in handling complex pat-
+terns in data. The analysis underscores the importance
+of selecting the optimal combination of architecture
+and optimizer to maximize model performance for
+specific applications.D. Accuracy and Loss Comparison of LSTM
+As shown in Fig. 3(a), the Transformer model
+achieved the highest validation accuracy of 98.99%
+using the AdamW optimizer, followed by Adam and
+Nadam at 98.86%, 96.72% respectively, which high-
+lights AdamW optimizer as the best optimizer to
+achieve high accuracy. In contrast, Fig.3(b) highlights
+the validation loss trends, where Adam resulted in the
+lowest loss, approximately 0.050, followed by Nadam
+at around 0.036 and AdamW converging close to
+0.044. The loss values demonstrate Nadam’s supe-
+rior efficiency in minimizing error compared to other
+optimizers. Collectively, this analysis underscores a
+trade-off between optimizers, with AdamW excelling
+in terms of accuracy and Nadam showing superior loss
+minimization, which suggests that AdamW is optimal
+for maximizing accuracy and Nadam’s ability to reduce
+error.
+E. Comparison of Performance Metrics of Transform-
+ers
+The 3D plot comparing precision, recall and F1-
+score for the LSTM model across different optimizers,
+as illustrated in Fig. 3(c), highlights the variations in
+performance metrics. The Adam optimizer achieves
+the highest scores, with precision at 0.9799, recall at
+0.9701 and F1-score at 0.9750, demonstrating its supe-
+rior ability to balance accuracy and stability. AdamW
+follows with slightly lower values, showcasing its com-
+petitive performance. Meanwhile, Nadam exhibit com-
+paratively lower scores, indicating reduced efficiency
+in certain metrics. Overall, the results emphasize the
+effectiveness of Adam and AdamW in optimizing
+the LSTM model’s precision, while Nadam provides
+moderate performance.
+F . ROC Curve Comparison and confusion matrix
+Fig. 2(c) illustrates the ROC curves for RNN, Trans-
+former and LSTM models with Adam optimizers,
+highlighting the trade-off between true positive and
+false positive rates. The Area Under the Curve (AUC)
+values indicates the classification performance of each
+(a)
+ (b)
+ (c)
+Fig. 3: (a) Accuracy and loss graphs for Transformers model (b) Loss for Transformers model (c) Comparison
+of Validation metrics for LSTM, RNN, Transformers
+model. For the RNN model, Adam optimizers achieved
+perfect AUC value of 0.9998, while LSTM and Trans-
+former both achieved AUC values of 0.9980 and
+0.9988 respectively. The results highlights the superior
+performance of the RNN model, especially with Adam
+while LSTM and Transformer demonstrated consistent
+performance across all optimizers.
+A confusion matrix Fig. 2(b) shows the classifica-
+tion outcomes of the models which includes four key
+results: total true positives (1275 ”Attack” correctly
+classified), total true negatives (1722 ”Natural” cor-
+rectly classified), total false positives (72 ”Natural”
+misclassified as ”Attack”), total false negatives (16
+”Attack” misclassified as ”Natural”). The matrix helps
+calculating important metrics like accuracy, precision,
+recall and F1-score. For imbalanced datasets, it pro-
+vides insights not only into the strengths of the model
+but also potential areas for improvement.
+V. C ONCLUSION
+In conclusion, this paper explores a deep learn-
+ing based model for securing IoT communication in
+aerospace by detecting and preventing SQL data injec-
+tion attacks. It provides the structure and framework
+with transformer block with multi-head attention. It
+guarantees reliable communication by reducing the loss
+during training and validation while handling sequen-
+tial and complex IoT data. Aero-SecureNet ’s ability to
+adapt in real time to changing conditions with potential
+enhancements using blockchain, demonstrates the ro-
+bustness of the critical communication links that Aero-
+SecureNet supports and its contribution to the security
+and efficiency of a broad class of aerospace systems.
+In the future, to enhance data security, quantum cryp-
+tography, blockchain and its application in aerospace
+will also be explored.
+REFERENCES
+[1] M. Alghawazi, D. Alghazzawi, and S. Alarifi, “Deep learning
+architecture for detecting sql injection attacks based on rnn
+autoencoder model,” Mathematics , vol. 11, no. 15, 2023.
+[2] A. Ketema, Developing Sql Injection Prevention Model Using
+Deep Learning Technique . PhD thesis, St. Mary’s University,
+2022.[3] A. Falor, M. Hirani, H. Vedant, P. Mehta, and D. Krishnan, A
+Deep Learning Approach for Detection of SQL Injection Attacks
+Using Convolutional Neural Networks , pp. 293–304. 01 2022.
+[4] J. Irungu, S. Graham, A. Girma, and T. Kacem, “Artificial
+intelligence techniques for sql injection attack detection,” in
+Proceedings of the 2023 8th International Conference on In-
+telligent Information Technology , ICIIT ’23, (New York, NY ,
+USA), p. 38–45, Association for Computing Machinery, 2023.
+[5] O. Senouci and N. Benaouda, “Advanced deep learning frame-
+work for detecting sql injection attacks based on gru model,”
+STUDIES IN ENGINEERING AND EXACT SCIENCES , vol. 5,
+p. e11299, Nov. 2024.
+[6] W. Zhang, Y . Li, X. Li, M. Shao, Y . Mi, H. Zhang, and
+G. Zhi, “Deep neural network-based sql injection detection
+method,” Security and Communication Networks , vol. 2022,
+no. 1, p. 4836289, 2022.
+[7] M. A. M. Oudah and M. F. Marhusin, “Sql injection detection
+using machine learning: A review,” Malaysian Journal of Sci-
+ence Health Technology , vol. 10, pp. 39–49, Apr 2024.
+[8] V . Vajrobol, G. J. Saxena, S. Singh, A. Pundir, B. B. Gupta,
+A. Gaurav, and K. T. Chui, “Enhancing aviation control security
+through ads-b injection detection using ensemble meta-learning
+models with explainable ai,” Alexandria Engineering Journal ,
+vol. 112, pp. 63–73, 2025.
+[9] “https://ieee-dataport.org/documents/false-data-injection-attack-
+dataset-industrial-internet-things,”
