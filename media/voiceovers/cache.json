@@ -1,0 +1,308 @@
+[
+  {
+    "input_text": "Generative AI (Gen AI) can greatly enhance system design by streamlining processes and augmenting human expertise.",
+    "input_data": {
+      "input_text": "Generative AI (Gen AI) can greatly enhance system design by streamlining processes and augmenting human expertise.",
+      "service": "gtts"
+    },
+    "original_audio": "generative-ai-gen-ai-can-greatly-enhance-system-f4325efd.mp3",
+    "final_audio": "generative-ai-gen-ai-can-greatly-enhance-system-f4325efd.mp3"
+  },
+  {
+    "input_text": "The researchers identified this challenge: The complex and critical nature of system designs demands that LLM-generated outputs meet high standards of accuracy, reliability, and safety, requiring rigorous evaluation techniques.",
+    "input_data": {
+      "input_text": "The researchers identified this challenge: The complex and critical nature of system designs demands that LLM-generated outputs meet high standards of accuracy, reliability, and safety, requiring rigorous evaluation techniques.",
+      "service": "gtts"
+    },
+    "original_audio": "the-researchers-identified-this-challenge-the-4377e026.mp3",
+    "final_audio": "the-researchers-identified-this-challenge-the-4377e026.mp3"
+  },
+  {
+    "input_text": "Their approach was as follows: The paper proposes a Gen AI-based platform that combines GPT-4 and Multimodal Retrieval Augmented Generation (RAG) to generate design information and evaluate its correctness based on design-specific criteria.",
+    "input_data": {
+      "input_text": "Their approach was as follows: The paper proposes a Gen AI-based platform that combines GPT-4 and Multimodal Retrieval Augmented Generation (RAG) to generate design information and evaluate its correctness based on design-specific criteria.",
+      "service": "gtts"
+    },
+    "original_audio": "their-approach-was-as-follows-the-paper-proposes-a-0b5100b2.mp3",
+    "final_audio": "their-approach-was-as-follows-the-paper-proposes-a-0b5100b2.mp3"
+  },
+  {
+    "input_text": "The research yielded these results: The SE Assistant prototype demonstrates its ability to streamline the system design process, from initial data gathering to the final design output, making it an invaluable tool for system engineers.",
+    "input_data": {
+      "input_text": "The research yielded these results: The SE Assistant prototype demonstrates its ability to streamline the system design process, from initial data gathering to the final design output, making it an invaluable tool for system engineers.",
+      "service": "gtts"
+    },
+    "original_audio": "the-research-yielded-these-results-the-se-ddfb8338.mp3",
+    "final_audio": "the-research-yielded-these-results-the-se-ddfb8338.mp3"
+  },
+  {
+    "input_text": "Looking ahead, The paper suggests further research on developing more advanced evaluation techniques and integrating the platform with existing system design tools.",
+    "input_data": {
+      "input_text": "Looking ahead, The paper suggests further research on developing more advanced evaluation techniques and integrating the platform with existing system design tools.",
+      "service": "gtts"
+    },
+    "original_audio": "looking-ahead-the-paper-suggests-further-research-7b39ff5b.mp3",
+    "final_audio": "looking-ahead-the-paper-suggests-further-research-7b39ff5b.mp3"
+  },
+  {
+    "input_text": "The paper proposes implementing Retrieval-Augmented Generation (RAG) in chatbot systems to improve real-time customer support in e-commerce.",
+    "input_data": {
+      "input_text": "The paper proposes implementing Retrieval-Augmented Generation (RAG) in chatbot systems to improve real-time customer support in e-commerce.",
+      "service": "gtts"
+    },
+    "original_audio": "the-paper-proposes-implementing-retrieval-cfc59b8e.mp3",
+    "final_audio": "the-paper-proposes-implementing-retrieval-cfc59b8e.mp3"
+  },
+  {
+    "input_text": "The researchers identified this challenge: Traditional chatbots in e-commerce often fail to provide accurate responses to complex customer queries, leading to dissatisfaction and inefficient service processes.",
+    "input_data": {
+      "input_text": "The researchers identified this challenge: Traditional chatbots in e-commerce often fail to provide accurate responses to complex customer queries, leading to dissatisfaction and inefficient service processes.",
+      "service": "gtts"
+    },
+    "original_audio": "the-researchers-identified-this-challenge-05cc62a2.mp3",
+    "final_audio": "the-researchers-identified-this-challenge-05cc62a2.mp3"
+  },
+  {
+    "input_text": "Their approach was as follows: The proposed solution utilizes RAG, an advanced technology that combines retrieval and generative techniques to provide contextually relevant answers by retrieving information from various sources and tailoring responses to specific queries.",
+    "input_data": {
+      "input_text": "Their approach was as follows: The proposed solution utilizes RAG, an advanced technology that combines retrieval and generative techniques to provide contextually relevant answers by retrieving information from various sources and tailoring responses to specific queries.",
+      "service": "gtts"
+    },
+    "original_audio": "their-approach-was-as-follows-the-proposed-41174b14.mp3",
+    "final_audio": "their-approach-was-as-follows-the-proposed-41174b14.mp3"
+  },
+  {
+    "input_text": "The research yielded these results: By leveraging RAG, the chatbot ensures accurate, contextually relevant responses that streamline service processes, reduce errors, and improve customer satisfaction, ultimately enhancing the e-commerce experience.",
+    "input_data": {
+      "input_text": "The research yielded these results: By leveraging RAG, the chatbot ensures accurate, contextually relevant responses that streamline service processes, reduce errors, and improve customer satisfaction, ultimately enhancing the e-commerce experience.",
+      "service": "gtts"
+    },
+    "original_audio": "the-research-yielded-these-results-by-leveraging-fc005eac.mp3",
+    "final_audio": "the-research-yielded-these-results-by-leveraging-fc005eac.mp3"
+  },
+  {
+    "input_text": "Looking ahead, The paper suggests exploring the integration of domain-specific knowledge graphs and reinforcement learning to further enhance the performance and adaptability of the proposed RAG-based chatbot system.",
+    "input_data": {
+      "input_text": "Looking ahead, The paper suggests exploring the integration of domain-specific knowledge graphs and reinforcement learning to further enhance the performance and adaptability of the proposed RAG-based chatbot system.",
+      "service": "gtts"
+    },
+    "original_audio": "looking-ahead-the-paper-suggests-exploring-the-64cfbd4c.mp3",
+    "final_audio": "looking-ahead-the-paper-suggests-exploring-the-64cfbd4c.mp3"
+  },
+  {
+    "input_text": "**Scene 1: The Enigma of Deep Learning**",
+    "input_data": {
+      "input_text": "**Scene 1: The Enigma of Deep Learning**",
+      "service": "gtts"
+    },
+    "original_audio": "scene-1-the-enigma-of-deep-learning-68943c0a.mp3",
+    "final_audio": "scene-1-the-enigma-of-deep-learning-68943c0a.mp3"
+  },
+  {
+    "input_text": "In the world of artificial intelligence, we have these incredible neural networks, like super-smart brains, that can learn from vast amounts of data. But here's the catch: they're like finicky children, often struggling to learn efficiently.",
+    "input_data": {
+      "input_text": "In the world of artificial intelligence, we have these incredible neural networks, like super-smart brains, that can learn from vast amounts of data. But here's the catch: they're like finicky children, often struggling to learn efficiently.",
+      "service": "gtts"
+    },
+    "original_audio": "in-the-world-of-artificial-intelligence-we-have-a6c984ee.mp3",
+    "final_audio": "in-the-world-of-artificial-intelligence-we-have-a6c984ee.mp3"
+  },
+  {
+    "input_text": "**Scene 2: The Slippery Slope of Learning**",
+    "input_data": {
+      "input_text": "**Scene 2: The Slippery Slope of Learning**",
+      "service": "gtts"
+    },
+    "original_audio": "scene-2-the-slippery-slope-of-learning-96f24f27.mp3",
+    "final_audio": "scene-2-the-slippery-slope-of-learning-96f24f27.mp3"
+  },
+  {
+    "input_text": "Researchers have discovered that these neural networks can't handle certain types of data well. It's like trying to fill a glass with water from a slippery hose - the water keeps flowing, but the glass never fills. When the neural network tries to learn, it keeps making small changes, but it never really gets anywhere.",
+    "input_data": {
+      "input_text": "Researchers have discovered that these neural networks can't handle certain types of data well. It's like trying to fill a glass with water from a slippery hose - the water keeps flowing, but the glass never fills. When the neural network tries to learn, it keeps making small changes, but it never really gets anywhere.",
+      "service": "gtts"
+    },
+    "original_audio": "researchers-have-discovered-that-these-neural-5e539e52.mp3",
+    "final_audio": "researchers-have-discovered-that-these-neural-5e539e52.mp3"
+  },
+  {
+    "input_text": "**Scene 3: The Mystery Unsolved**",
+    "input_data": {
+      "input_text": "**Scene 3: The Mystery Unsolved**",
+      "service": "gtts"
+    },
+    "original_audio": "scene-3-the-mystery-unsolved-0e5b8347.mp3",
+    "final_audio": "scene-3-the-mystery-unsolved-0e5b8347.mp3"
+  },
+  {
+    "input_text": "So, what's the problem? Our researchers aren't sure yet, but they've made some fascinating observations. One culprit might be the activation function, the way the network translates data. It's like using different codes to decipher a message - some codes make it tough to understand, while others make it crystal clear.",
+    "input_data": {
+      "input_text": "So, what's the problem? Our researchers aren't sure yet, but they've made some fascinating observations. One culprit might be the activation function, the way the network translates data. It's like using different codes to decipher a message - some codes make it tough to understand, while others make it crystal clear.",
+      "service": "gtts"
+    },
+    "original_audio": "so-what-s-the-problem-our-researchers-aren-t-sure-cedd4834.mp3",
+    "final_audio": "so-what-s-the-problem-our-researchers-aren-t-sure-cedd4834.mp3"
+  },
+  {
+    "input_text": "**Scene 4: Saturated Units: Stuck in a Rut**",
+    "input_data": {
+      "input_text": "**Scene 4: Saturated Units: Stuck in a Rut**",
+      "service": "gtts"
+    },
+    "original_audio": "scene-4-saturated-units-stuck-in-a-rut-ea431530.mp3",
+    "final_audio": "scene-4-saturated-units-stuck-in-a-rut-ea431530.mp3"
+  },
+  {
+    "input_text": "Here's a surprising finding: when certain units in the neural network get overloaded with data, they get stuck, like a clogged faucet. They just stop doing their job. But don't be alarmed! These units can gradually recover on their own, explaining why neural networks sometimes seem to get better over time.",
+    "input_data": {
+      "input_text": "Here's a surprising finding: when certain units in the neural network get overloaded with data, they get stuck, like a clogged faucet. They just stop doing their job. But don't be alarmed! These units can gradually recover on their own, explaining why neural networks sometimes seem to get better over time.",
+      "service": "gtts"
+    },
+    "original_audio": "here-s-a-surprising-finding-when-certain-units-in-27c13943.mp3",
+    "final_audio": "here-s-a-surprising-finding-when-certain-units-in-27c13943.mp3"
+  },
+  {
+    "input_text": "**Scene 5: Tweaking the Initialization**",
+    "input_data": {
+      "input_text": "**Scene 5: Tweaking the Initialization**",
+      "service": "gtts"
+    },
+    "original_audio": "scene-5-tweaking-the-initialization-4ea943e4.mp3",
+    "final_audio": "scene-5-tweaking-the-initialization-4ea943e4.mp3"
+  },
+  {
+    "input_text": "To overcome these challenges, researchers have come up with clever tricks. They've tweaked the way they start the learning process, like a chef using different spices to enhance a dish. By carefully initializing the network, they can make the learning journey much smoother.",
+    "input_data": {
+      "input_text": "To overcome these challenges, researchers have come up with clever tricks. They've tweaked the way they start the learning process, like a chef using different spices to enhance a dish. By carefully initializing the network, they can make the learning journey much smoother.",
+      "service": "gtts"
+    },
+    "original_audio": "to-overcome-these-challenges-researchers-have-come-f0f93220.mp3",
+    "final_audio": "to-overcome-these-challenges-researchers-have-come-f0f93220.mp3"
+  },
+  {
+    "input_text": "**Scene 6: A Glimmer of Hope**",
+    "input_data": {
+      "input_text": "**Scene 6: A Glimmer of Hope**",
+      "service": "gtts"
+    },
+    "original_audio": "scene-6-a-glimmer-of-hope-9373607b.mp3",
+    "final_audio": "scene-6-a-glimmer-of-hope-9373607b.mp3"
+  },
+  {
+    "input_text": "So, while the mystery of deep learning difficulty remains unsolved, researchers have made progress. They've identified some of the obstacles and have developed strategies to improve training. With continued research and innovation, we can expect even more powerful neural networks that can tackle the complex challenges of our world.",
+    "input_data": {
+      "input_text": "So, while the mystery of deep learning difficulty remains unsolved, researchers have made progress. They've identified some of the obstacles and have developed strategies to improve training. With continued research and innovation, we can expect even more powerful neural networks that can tackle the complex challenges of our world.",
+      "service": "gtts"
+    },
+    "original_audio": "so-while-the-mystery-of-deep-learning-difficulty-9ef1d198.mp3",
+    "final_audio": "so-while-the-mystery-of-deep-learning-difficulty-9ef1d198.mp3"
+  },
+  {
+    "input_text": "The Transformer neural network model proposes a novel architecture based solely on attention mechanisms, surpassing recurrent models in efficiency and translation quality.",
+    "input_data": {
+      "input_text": "The Transformer neural network model proposes a novel architecture based solely on attention mechanisms, surpassing recurrent models in efficiency and translation quality.",
+      "service": "gtts"
+    },
+    "original_audio": "the-transformer-neural-network-model-proposes-a-9fb41040.mp3",
+    "final_audio": "the-transformer-neural-network-model-proposes-a-9fb41040.mp3"
+  },
+  {
+    "input_text": "The researchers identified this challenge: Limitations of recurrent language models include inherent sequential computation, which hinders parallelization and impacts efficiency at longer sequence lengths.",
+    "input_data": {
+      "input_text": "The researchers identified this challenge: Limitations of recurrent language models include inherent sequential computation, which hinders parallelization and impacts efficiency at longer sequence lengths.",
+      "service": "gtts"
+    },
+    "original_audio": "the-researchers-identified-this-challenge-9e736f1c.mp3",
+    "final_audio": "the-researchers-identified-this-challenge-9e736f1c.mp3"
+  },
+  {
+    "input_text": "The Transformer, a novel neural network architecture, leverages solely attention mechanisms to achieve superior performance in sequence transduction tasks like machine translation.",
+    "input_data": {
+      "input_text": "The Transformer, a novel neural network architecture, leverages solely attention mechanisms to achieve superior performance in sequence transduction tasks like machine translation.",
+      "service": "gtts"
+    },
+    "original_audio": "the-transformer-a-novel-neural-network-1ff68e43.mp3",
+    "final_audio": "the-transformer-a-novel-neural-network-1ff68e43.mp3"
+  },
+  {
+    "input_text": "The researchers identified this challenge: Traditional sequence transduction models rely heavily on sequential computation, which limits parallelization and training efficiency.",
+    "input_data": {
+      "input_text": "The researchers identified this challenge: Traditional sequence transduction models rely heavily on sequential computation, which limits parallelization and training efficiency.",
+      "service": "gtts"
+    },
+    "original_audio": "the-researchers-identified-this-challenge-c302a9be.mp3",
+    "final_audio": "the-researchers-identified-this-challenge-c302a9be.mp3"
+  },
+  {
+    "input_text": "Their approach was as follows: The Transformer dispenses with recurrence and convolutions, employing solely attention mechanisms to capture global dependencies between input and output sequences.",
+    "input_data": {
+      "input_text": "Their approach was as follows: The Transformer dispenses with recurrence and convolutions, employing solely attention mechanisms to capture global dependencies between input and output sequences.",
+      "service": "gtts"
+    },
+    "original_audio": "their-approach-was-as-follows-the-transformer-730ac87e.mp3",
+    "final_audio": "their-approach-was-as-follows-the-transformer-730ac87e.mp3"
+  },
+  {
+    "input_text": "The research yielded these results: On the WMT 2014 English-to-German translation task, the Transformer surpasses existing state-of-the-art models, including ensembles, by over 2 BLEU points. It also sets a new single-model state-of-the-art BLEU score of 41.8 on the English-to-French translation task.",
+    "input_data": {
+      "input_text": "The research yielded these results: On the WMT 2014 English-to-German translation task, the Transformer surpasses existing state-of-the-art models, including ensembles, by over 2 BLEU points. It also sets a new single-model state-of-the-art BLEU score of 41.8 on the English-to-French translation task.",
+      "service": "gtts"
+    },
+    "original_audio": "the-research-yielded-these-results-on-the-wmt-2014-f3d4b7a5.mp3",
+    "final_audio": "the-research-yielded-these-results-on-the-wmt-2014-f3d4b7a5.mp3"
+  },
+  {
+    "input_text": "Looking ahead, The Transformer generalizes well to other tasks such as English constituency parsing, demonstrating its versatility in natural language processing.",
+    "input_data": {
+      "input_text": "Looking ahead, The Transformer generalizes well to other tasks such as English constituency parsing, demonstrating its versatility in natural language processing.",
+      "service": "gtts"
+    },
+    "original_audio": "looking-ahead-the-transformer-generalizes-well-to-45f0b01e.mp3",
+    "final_audio": "looking-ahead-the-transformer-generalizes-well-to-45f0b01e.mp3"
+  },
+  {
+    "input_text": "The Transformer, a novel neural network architecture based solely on attention mechanisms, outperforms existing models in machine translation and other tasks.",
+    "input_data": {
+      "input_text": "The Transformer, a novel neural network architecture based solely on attention mechanisms, outperforms existing models in machine translation and other tasks.",
+      "service": "gtts"
+    },
+    "original_audio": "the-transformer-a-novel-neural-network-dbe93373.mp3",
+    "final_audio": "the-transformer-a-novel-neural-network-dbe93373.mp3"
+  },
+  {
+    "input_text": "The researchers identified this challenge: Recurrent neural networks used in sequence transduction models present inherent limitations in parallelization and computational efficiency due to their sequential nature.",
+    "input_data": {
+      "input_text": "The researchers identified this challenge: Recurrent neural networks used in sequence transduction models present inherent limitations in parallelization and computational efficiency due to their sequential nature.",
+      "service": "gtts"
+    },
+    "original_audio": "the-researchers-identified-this-challenge-269c65e2.mp3",
+    "final_audio": "the-researchers-identified-this-challenge-269c65e2.mp3"
+  },
+  {
+    "input_text": "Their approach was as follows: The Transformer architecture dispenses with recurrence and convolutional operations, introducing an encoder-decoder structure based entirely on self-attention and multi-head attention mechanisms.",
+    "input_data": {
+      "input_text": "Their approach was as follows: The Transformer architecture dispenses with recurrence and convolutional operations, introducing an encoder-decoder structure based entirely on self-attention and multi-head attention mechanisms.",
+      "service": "gtts"
+    },
+    "original_audio": "their-approach-was-as-follows-the-transformer-33ceb047.mp3",
+    "final_audio": "their-approach-was-as-follows-the-transformer-33ceb047.mp3"
+  },
+  {
+    "input_text": "The research yielded these results: The Transformer achieves state-of-the-art results in machine translation tasks, outperforming previous models by over 2 BLEU on the WMT 2014 English-to-German translation task.",
+    "input_data": {
+      "input_text": "The research yielded these results: The Transformer achieves state-of-the-art results in machine translation tasks, outperforming previous models by over 2 BLEU on the WMT 2014 English-to-German translation task.",
+      "service": "gtts"
+    },
+    "original_audio": "the-research-yielded-these-results-the-transformer-f1db80c6.mp3",
+    "final_audio": "the-research-yielded-these-results-the-transformer-f1db80c6.mp3"
+  },
+  {
+    "input_text": "Looking ahead, The authors propose exploring customized attention functions, combining the Transformer with other architectures, and extending it to a wider range of tasks.",
+    "input_data": {
+      "input_text": "Looking ahead, The authors propose exploring customized attention functions, combining the Transformer with other architectures, and extending it to a wider range of tasks.",
+      "service": "gtts"
+    },
+    "original_audio": "looking-ahead-the-authors-propose-exploring-205efb66.mp3",
+    "final_audio": "looking-ahead-the-authors-propose-exploring-205efb66.mp3"
+  }
+]

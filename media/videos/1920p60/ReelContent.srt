@@ -1,0 +1,72 @@
+1
+00:00:05,000 --> 00:00:08,844
+The Transformer, a novel neural network architecture
+
+2
+00:00:08,944 --> 00:00:13,243
+based solely on attention mechanisms, outperforms existing
+
+3
+00:00:13,343 --> 00:00:16,732
+models in machine translation and other tasks.
+
+4
+00:00:19,316 --> 00:00:23,585
+The researchers identified this challenge: Recurrent neural
+
+5
+00:00:23,685 --> 00:00:27,509
+networks used in sequence transduction models present
+
+6
+00:00:27,609 --> 00:00:32,545
+inherent limitations in parallelization and computational efficiency
+
+7
+00:00:32,645 --> 00:00:34,840
+due to their sequential nature.
+
+8
+00:00:36,433 --> 00:00:39,828
+Their approach was as follows: The Transformer
+
+9
+00:00:39,928 --> 00:00:44,995
+architecture dispenses with recurrence and convolutional operations,
+
+10
+00:00:45,095 --> 00:00:49,402
+introducing an encoder-decoder structure based entirely on
+
+11
+00:00:49,502 --> 00:00:53,277
+self-attention and multi-head attention mechanisms.
+
+12
+00:00:54,866 --> 00:00:58,948
+The research yielded these results: The Transformer
+
+13
+00:00:59,048 --> 00:01:04,113
+achieves state-of-the-art results in machine translation tasks,
+
+14
+00:01:04,213 --> 00:01:07,721
+outperforming previous models by over 2 BLEU
+
+15
+00:01:07,821 --> 00:01:11,902
+on the WMT 2014 English-to-German translation task.
+
+16
+00:01:13,500 --> 00:01:18,327
+Looking ahead, The authors propose exploring customized attention
+
+17
+00:01:18,427 --> 00:01:23,331
+functions, combining the Transformer with other architectures, and
+
+18
+00:01:23,431 --> 00:01:26,288
+extending it to a wider range of tasks.
+
