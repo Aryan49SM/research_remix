@@ -16,7 +16,7 @@ import math
 import re
 import traceback
 from datetime import datetime
-
+#fi
 # Configure Manim settings
 config.frame_width = 9
 config.frame_height = 16

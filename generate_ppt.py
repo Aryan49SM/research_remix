@@ -13,7 +13,7 @@ from pptx.enum.text import PP_ALIGN
 from nltk.tokenize import sent_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-
+#fi
 # Load environment variables and configure
 load_dotenv()
 nltk.download("punkt", quiet=True)

@@ -21,7 +21,7 @@ config.frame_height = 9
 config.pixel_height = 1080
 config.pixel_width = 1920
 config.frame_rate = 30  # Standard 30 fps
-
+#fi
 # Configuration class
 class Config:
     BASE_DIR = Path(r"D:\Nirma\6th Semester\MINeD").resolve()

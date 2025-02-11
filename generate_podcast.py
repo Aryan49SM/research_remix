@@ -10,7 +10,7 @@ from utils.audio_gen import generate_podcast
 
 # Load environment variables
 load_dotenv()
-
+#fi
 # Initialize Gemini
 GOOGLE_API_KEY = os.getenv('GEMINI_API_KEY')
 if not GOOGLE_API_KEY:
